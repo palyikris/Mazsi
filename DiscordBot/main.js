@@ -66,8 +66,10 @@ dispatcher.on('error', console.error);
     })
     });
 client.on('message', message =>{
+    if(message.content.includes("hosszú")||message.content.includes("szop")||message.content.includes("hatalmas")||message.content.includes("kicsi")||message.content.includes("apró")||message.content.includes("big")){
+        message.channel.send("That's what she said");
+      }
     if(!message.content.startsWith(prefix) || message.author.bot) return ;
-    
     const args= message.content.slice(prefix.length).split(/ +/);
     const command= args.shift().toLowerCase();
     if (command==='abel'){
