@@ -226,5 +226,5 @@ client.on("message", async message => {
     });
     await song_queue.textChannel.send(`Szól a baszatáska: **${song.title}**`)
 }
-const config= require('./config.json');
+const config= require('../../config.json');
 client.login(config.token);
