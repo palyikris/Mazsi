@@ -8,15 +8,15 @@ module.exports={
     execute( message, args){
         const member=message.mentions.users.first();
         if(member.id==="831548775474135101"){
-            message.channel.send("Le se tudom mérni, olyan hosszú.")
+            message.channel.send("Le se tudom mérni, olyan nagy.")
         }
         else if(member.id==="353096458263592960"){
-            message.channel.send("Xd, ez egy hatalmas 0.")
+            message.channel.send("Xd, ez egy retek nagy 0.")
         }
         else{
 
         let reps =Math.floor(Math.random() * 20+1);
-        const size =`${message.author}`+", "+"<@"+member+">"+" farka "+reps+" cm hosszú";
+        const size =`${message.author}`+", "+"<@"+member+">"+" farka "+reps+" cm.";
         message.channel.send(size);
     }
     }
